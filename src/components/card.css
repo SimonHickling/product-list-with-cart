@@ -1,0 +1,132 @@
+#root {
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card-container {
+  margin: 0;
+  background-color: #fff;
+  padding: 0;
+  border-radius: 8px;
+  text-align: left;
+  width: 320px;
+  height: 400px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.card-container h2,
+.card-container p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-container h2 {
+  font-size: 1.3rem;
+  color: #4b3e3c;
+}
+
+.category {
+  color: #b09f9d;
+}
+
+.price {
+  color: #c66c58;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.button-toggle {
+  position: relative;
+  bottom: 30px;
+  height: 50px;
+  width: 200px;
+  place-self: center;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.number-selector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  background-color: #c83c0e;
+  border-radius: 25px;
+  outline: 2px solid #fff;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.quantity-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c83c0e;
+  border: 2px solid #fff;
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  border-radius: 14px;
+}
+
+.quantity-btn:active {
+  background-color: #ab330b;
+}
+
+.button-toggle:hover .add-to-cart-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button-toggle:hover .number-selector {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 25px;
+  margin: 0;
+  width: 100%;
+  padding: 2rem;
+}
+
+.card-container:hover .card-image {
+  outline: 3px solid #c83c0e;
+  outline-offset: -2px;
+  transition: outline 0.3s ease-in-out;
+}
+
+@media (max-width: 750px) {
+  .card-container {
+    width: 300px;
+  }
+  .card-text-container {
+    padding: 30px;
+  }
+}

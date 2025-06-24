@@ -1,0 +1,23 @@
+.confirm-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  z-index: 10;
+}
+.confirmed-icon {
+  width: 50px;
+}
+
+.item-thumbnail {
+  width: 60px;
+  position: relative;
+  right: 40%;
+}
+
+@media (max-width: 750px) {
+  .confirm-container {
+    width: 280px;
+  }
+}

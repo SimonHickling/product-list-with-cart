@@ -1,0 +1,93 @@
+#root {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.basket-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.cart-image {
+  width: 40%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.item-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+
+.quantity {
+  color: #c66c58;
+}
+
+.unit-price {
+  color: #b09f9d;
+}
+
+.total-price {
+  color: #4b3e3c;
+}
+h4 {
+  color: #4b3e3c;
+  justify-self: flex-start;
+}
+
+.total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sum-total {
+  font-size: 2rem;
+  font-weight: 700;
+  justify-self: flex-end;
+  color: #4b3e3c;
+}
+
+.carbon-neutral {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #fcf8f5;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.confirm-order-btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #c83c0e;
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.confirm-order-btn:hover {
+  color: #c83c0e;
+  background-color: #fff;
+  border: 2px solid #c83c0e;
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  .basket-container {
+    width: 260px;
+  }
+}

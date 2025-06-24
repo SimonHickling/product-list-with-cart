@@ -1,0 +1,87 @@
+#root {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  width: 100vw;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-title {
+  font-size: 2rem;
+}
+
+.main-page-layout {
+  display: flex;
+}
+
+.basket-area {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10rem 0 0;
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.card-wrapper {
+  width: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 0 0 0 20rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1800px) {
+  .card-wrapper {
+    padding: 0 7rem 0 7rem;
+  }
+}
+@media (max-width: 1350px) {
+  .card-wrapper {
+    padding: 0 0 0 4rem;
+    width: 60%;
+  }
+  .basket-area {
+    width: 40%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 750px) {
+  .main-page-layout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .card-wrapper {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    place-items: center;
+    padding: 0;
+  }
+  .basket-area {
+    width: 300px;
+    padding: 0;
+    margin: 2rem 0 0 0;
+  }
+  .basket-container {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+}
