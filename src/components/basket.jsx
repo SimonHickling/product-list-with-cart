@@ -28,7 +28,7 @@ const Basket = ({ cartItems, onConfirmOrder }) => {
             
             {cartItems.length === 0 ? (
                 <>
-                    <img className="cart-image" src='../src/assets/images/illustration-empty-cart.svg' alt="Cart Image"></img>
+                    <img className="cart-image" src='/images/illustration-empty-cart.svg' alt="Cart Image"></img>
                     <div className="basket-item-container">
                         <p>Your added items will show here</p>
                     </div>
@@ -56,7 +56,7 @@ const Basket = ({ cartItems, onConfirmOrder }) => {
                     </div>
                     
                     <div className="carbon-neutral">
-                        <img src='../src/assets/images/icon-carbon-neutral.svg' alt="Carbon Neutral" />
+                        <img src='/images/icon-carbon-neutral.svg' alt="Carbon Neutral" />
                         <span>This is a <strong>carbon-neutral</strong> delivery</span>
                     </div>
                     
