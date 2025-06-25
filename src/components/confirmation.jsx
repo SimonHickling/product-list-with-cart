@@ -14,7 +14,7 @@ const Confirmation = ({ cartItems }) => {
     return (
         <>
         <div className="basket-container confirm-container">
-            <img className='confirmed-icon' src='../src/assets/images/icon-order-confirmed.svg'></img>
+            <img className='confirmed-icon' src='/images/icon-order-confirmed.svg'></img>
             <h2>Order Confirmed ({totalItems}) Items</h2>    
                    <div className="basket-items">
                     {cartItems.map((item) => (
@@ -54,7 +54,7 @@ const Confirmation = ({ cartItems }) => {
                         </div>
                     </div> 
                     <div className="carbon-neutral">
-                        <img src='../src/assets/images/icon-carbon-neutral.svg' alt="Carbon Neutral" />
+                        <img src='/images/icon-carbon-neutral.svg' alt="Carbon Neutral" />
                         <span>This is a <strong>carbon-neutral</strong> delivery</span>
                     </div>
                     <button className="confirm-order-btn" onClick={() => window.location.reload()}>Start a new order</button>

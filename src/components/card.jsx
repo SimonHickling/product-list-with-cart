@@ -23,16 +23,16 @@ const Card = ({ item, quantity, onAddToCart, onRemoveFromCart }) => {
       <img className='card-image' src={image.mobile} alt={name} />
       <div className="button-toggle" data-in-cart={quantity > 0}>
         <button type="submit" className="add-to-cart-btn" onClick={handleAddToCart}>
-          <img className='cart-icon' src='../src/assets/images/icon-add-to-cart.svg' alt='Cart Image'></img>
+          <img className='cart-icon' src='/images/icon-add-to-cart.svg' alt='Cart Image'></img>
           Add to Cart
         </button>
         <div className='number-selector'>
           <button className="quantity-btn minus-btn" onClick={handleDecrement}>
-            <img className='minus-icon' src='../src/assets/images/icon-decrement-quantity.svg' alt='Cart Image'></img>
+            <img className='minus-icon' src='/images/icon-decrement-quantity.svg' alt='Cart Image'></img>
           </button>
           <span>{quantity}</span>
           <button className="quantity-btn plus-btn" onClick={handleIncrement}>
-            <img className='plus-icon' src='../src/assets/images/icon-increment-quantity.svg' alt='Cart Image'></img>
+            <img className='plus-icon' src='/images/icon-increment-quantity.svg' alt='Cart Image'></img>
           </button>
         </div>
       </div>
