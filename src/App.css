@@ -11,6 +11,8 @@ body {
 
 .page-title {
   font-size: 2rem;
+  place-self: start;
+  margin-left: 20rem;
 }
 
 .main-page-layout {
@@ -39,6 +41,9 @@ body {
   .card-wrapper {
     padding: 0 7rem 0 7rem;
   }
+  .page-title {
+    margin-left: 7rem;
+  }
 }
 @media (max-width: 1350px) {
   .card-wrapper {
@@ -48,6 +53,9 @@ body {
   .basket-area {
     width: 40%;
     padding: 0 10px;
+  }
+  .page-title {
+    margin-left: 4rem;
   }
 }
 @media (max-width: 750px) {
@@ -73,6 +81,10 @@ body {
     width: 300px;
     margin: 0;
     padding: 0;
+  }
+  .page-title {
+    margin-left: 0;
+    place-self: center;
   }
 }
 .overlay {

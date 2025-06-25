@@ -55,7 +55,7 @@ function App() {
   return (
     <>
       <div className='page-title'>
-        <h1>Product List</h1>
+        <h1>Desserts</h1>
       </div>
       <div className='main-page-layout'>
         <div className="card-wrapper">

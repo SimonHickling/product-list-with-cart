@@ -15,6 +15,11 @@
   border-radius: 10px;
 }
 
+.basket-container h2 {
+  color: #c66c58;
+  place-self: start;
+}
+
 .cart-image {
   width: 40%;
   position: relative;
